@@ -2,10 +2,10 @@
 public class Person 
 {
 	
-	String m_name;
-	int m_age;
-	String m_phoneNumber;
-	String m_address;
+	private String m_name;
+	private int m_age;
+	private String m_phoneNumber;
+	private String m_address;
 	
 	public Person(String name, String phoneNumber, String address, int age)
 	{
@@ -29,42 +29,42 @@ public class Person
 		SetPhoneNumber("678-344-1903");
 	}
  
-	public int GetAge()
+	 int GetAge()
 		{
 		return m_age;
 		}
 	
-	public void SetAge(int age)
+	private void SetAge(int age)
 		{
 		m_age = age;
 		}
 	
-	public String GetName()
+	 String GetName()
 		{
 		return m_name;
 		}
 	
-	public void SetName(String name)
+	private void SetName(String name)
 		{
 		m_name = name;
 		}
 	
-	public String GetPhoneNumber()
+	 String GetPhoneNumber()
 		{
 		return m_phoneNumber;
 		}
 	
-	public void SetPhoneNumber(String phoneNumber)
+	private void SetPhoneNumber(String phoneNumber)
 		{
 		m_phoneNumber = phoneNumber;
 		}
 	
-	public String GetAddress()
+	 String GetAddress()
 		{
 		return m_address;
 		}
 	
-	public void SetAddress(String address)
+	private void SetAddress(String address)
 		{
 		m_address = address;
 		}
@@ -82,7 +82,7 @@ public class Person
 		System.out.println("You can reach her by this address: " + m_address + " or this "
 				+ "number: " + m_phoneNumber);
 	}
-	void GrowOlder() 
+	public void GrowOlder() 
 	{
 		m_age++;
 		System.out.println("When her birthday comes, she will be " + m_age++ + " years old.");	

@@ -2,7 +2,7 @@ import java.util.Scanner;
 //this will be used in the class
 
 public class DayOfWeek 
-{
+{ 
 
 	public static void main(String[] args) 
 	{
@@ -25,7 +25,7 @@ public class DayOfWeek
 	
 	void EvaluateDayOfWeek(String dayOfWeek)
 	{
-		if (dayOfWeek != null)
+		if (dayOfWeek != null) 
 		{
 			//if it is Saturday or Sunday, print that it is a weekend
 			if ((dayOfWeek.equalsIgnoreCase("Saturday"))
